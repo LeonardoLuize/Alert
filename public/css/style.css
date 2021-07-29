@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --purple: #714BE8;
+    --white: #FFFfff;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 10% 1fr;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sideBar{
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--purple);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#sideBar p {
+    font-family: "Museo", Verdana, Tahoma;
+
+    color: var(--white);
+
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: "Museo";
+    src: url('../fonts/Museo.otf') format("truetype");
+}
+
+.sideBarIcon{
+    width: 25px;
+}
+
+#contentContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.noteHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    border-bottom: 4px solid #ECECEC;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.noteHeader h2{
+    font-family: "Museo", Verdana, Tahoma;
+
+    font-weight: bold;
+
+}
+
+.noteHeader img{
+    width: 20px;
+}
+
+.messageContainer{
+    width: 90%;
+
+    padding: 20px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    margin-top: 25px;
+}
+
+.messageContainer p{
+
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 400;
+}  
+
+#wrapMessage{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#addMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+    
+    width: 90%;
+
+    background: var(--purple);
+
+    margin-top: 50px;
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+#addMessage img{
+    width: 30px;
+}
+
+#addMessage p{
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+#searchBar{
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-top: 25px;
+    margin-bottom: 70px;
+
+
+}
+
+#searchBar input{
+    width: 40%;
+    height: 100%;
+
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    padding: 5px;
+
+    font-size: 1.1rem;
+
+    background: #EEEEEE;
+
+}
+
+#searchBar input:focus{
+    outline-color: #999999;
+}
+
+#searchBar img{
+    width: 50px;
+    height: 100%;
+
+    border-radius: 0px 8px 8px 0px;
+    padding: 0px 10px;
+
+    background: var(--purple);
+
+}
+
+.modalBackground{
+
+    position: absolute;
+
+    top: 0px;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0000004f;
+
+    display: none;
+}
+
+.addMessageModal{
+    position: relative;
+
+    height: fit-content;
+}
+
+.addMessageModal p{
+    font-size: 1.2rem;
+
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.addMessageModal input{
+    width: 100%;
+    
+    padding: 5px;
+
+    font-size: 1.1rem;
+
+    background: #EEEEEE;
+    border-radius: 8px;
+    border: 2px solid #dadada;
+}
+
+.addMessageModal textarea{
+    width: 100%;
+    
+    padding: 5px;
+
+    font-size: 1.1rem;
+
+    background: #EEEEEE;
+    border-radius: 8px;
+    border: 2px solid #dadada;
+
+    resize: vertical;
+}
+
+.addMessageModal textarea, input:focus{
+    outline-color: #999999;
+}
+
+.addMessageButton{
+    width: 100% !important;
+
+    margin-top: 25px !important;
+}
