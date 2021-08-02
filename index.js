@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const PORT = 3000
 
-var allNotes = [{title: "oi", description: "dd"}];
+var allNotes = [];
 
 app.use(express.static(path.join(__dirname, '/public')));
 
