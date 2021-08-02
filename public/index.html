@@ -14,7 +14,7 @@
     <div id="container">
         <div id="sideBar">
             <p>A</p>
-            <img class="sideBarIcon " src="./svg/plus.svg" alt="ícone de adicionar mensagens">
+            <img onclick="toggleAddMessage()" class="sideBarIcon " src="./svg/plus.svg" alt="ícone de adicionar mensagens">
         </div>
         <div id="contentContainer">
 
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <div id="addMessage">
+            <div onclick="toggleAddMessage()" id="addMessage">
                 <img src="./svg/plus.svg" alt="adicionar mensagem">
 
                 <p>Nova Nota</p>
@@ -54,19 +54,20 @@
     </div>
 
     
-    <div class="modalBackground">
+    <div  class="modalBackground">
         <div class="messageContainer addMessageModal">
             <div class="noteHeader">
                 <h2>Adicionar Nota</h2>
 
+                <img onclick="toggleAddMessage()" src="./svg/x.svg" alt="closeModal">
             </div>
             <p>Título:</p>
-            <input type="text">
+            <input id="messageTitle" type="text">
 
             <p>Descrição:</p>
-            <textarea cols="30" rows="10"></textarea>
+            <textarea id="messageDescription" cols="30" rows="10"></textarea>
 
-            <div id="addMessage" class="addMessageButton">
+            <div onclick="addMessage()" id="addMessage" class="addMessageButton">
                 <img src="./svg/plus.svg" alt="adicionar mensagem">
 
                 <p>Adicionar Nota</p>
