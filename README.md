@@ -1,7 +1,7 @@
 <h1 align="center">
     Alert
 </h1>
-<p align="center">Uma aplicação para fundamentar conceitos do NodeJs</p>
+<p align="center">Uma aplicação para fundamentar conceitos do NodeJs e Express</p>
 
 <h4 align="center"> 
 	- Status: ✅ -
