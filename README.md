@@ -12,7 +12,7 @@
 
 <p>
   Esta aplicação foi criada com o foco de fundamentar conceitos 
-  básicos do NodeJs, a aplicação cria, busca e deleta notas.
+  básicos do NodeJs e Express, a aplicação cria, busca e deleta notas.
 </p>
 
 ### 🔌 Como rodar o projeto
